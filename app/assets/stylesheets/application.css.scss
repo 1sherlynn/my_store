@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+	@import "bootstrap-sprockets";
+	@import "bootstrap";
+
+
+	@import "color-deep-orange";
+	@import "style";
+	@import "font-awesome";
+	@import "toastr";

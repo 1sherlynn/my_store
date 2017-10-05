@@ -39,6 +39,12 @@ gem 'simple_form'
   gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
   gem 'carrierwave', '~> 1.1'
   gem "mini_magick"
+  gem 'activeadmin', github: 'activeadmin'
+  gem 'toastr-rails'
+  gem 'braintree'
+  gem 'figaro'
+  gem 'country_select'
+  gem 'font-awesome-rails'
 
 group :development do
   gem 'rails-erd'

@@ -15,6 +15,28 @@
   		<%= content_tag :div, msg, class: "alert alert-info"%>
   	 <% end %>
 <!-- flash end --> 
-    <%= yield %>
+
+    <%= render 'shared/header' %>
+
+
+    <div class="main-container">
+
+         <%= yield %>
+       
+
+    <%= render 'shared/footer' %>
+
+    </div><!-- /.main-container -->
+
+   
   </body>
+  
 </html>
+
+
+
+
+
+
+
+
