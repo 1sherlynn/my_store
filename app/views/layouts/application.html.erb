@@ -11,9 +11,9 @@
   <body>
 
   <!-- flash start --> 
-  	<% flash.each do |name, msg| %>
-  		<%= content_tag :div, msg, class: "alert alert-info"%>
-  	 <% end %>
+    <% flash.each do |name, msg| %>
+      <%= content_tag :div, msg, class: "alert alert-info"%>
+     <% end %>
 <!-- flash end --> 
 
     <%= render 'shared/header' %>
@@ -32,9 +32,6 @@
   </body>
   
 </html>
-
-
-
 
 
 

@@ -1,4 +1,4 @@
-   <header class="fullscreen-element">
+    <header class="fullscreen-element">
         <div class="background-image-holder parallax-background overlay" data-stellar-background-ratio="0.9">
           <%= image_tag("pancake.jpg", class: 'background-image', alt: 'Background Image') %>
         </div>
@@ -48,81 +48,10 @@
         </div><!--end of container-->
       </section>
 
-      <section class="products-grid">
-        <div class="container">
-          <div class="row products-container">
-            <div class="col-md-4 col-sm-6 col-xs-12 product">
-              <div class="thumbnail" style="background-image: url('/assets/tart.jpg');">
-                <div class="product-details text-center">
-                  <div class="align-vertical">
-                    <h3>Yellow chair</h3>
-                    <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                    <p class="product-price">$90</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12 product">
-              <div class="thumbnail" style="background-image: url('/assets/fries.jpg');">
-                <div class="product-details text-center">
-                  <div class="align-vertical">
-                    <h3>Sofa</h3>
-                    <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                    <p class="product-price">$90</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12 product">
-              <div class="thumbnail" style="background-image: url('/assets/coffee.jpg');">
-                <div class="product-details text-center">
-                  <div class="align-vertical">
-                    <h3>Clasic chair</h3>
-                    <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                    <p class="product-price">$90</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <br>
 
-            <div class="col-md-4 col-sm-6 col-xs-12 product">
-              <div class="thumbnail" style="background-image: url('/assets/fries.jpg');">
-                <div class="product-details text-center">
-                  <div class="align-vertical">
-                    <h3>Leather chair</h3>
-                    <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                    <p class="product-price">$90</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12 product">
-              <div class="thumbnail" style="background-image: url('/assets/pasta.jpg');">
-                <div class="product-details text-center">
-                  <div class="align-vertical">
-                    <h3>Blue chair</h3>
-                    <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                    <p class="product-price">$90</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12 product">
-              <div class="thumbnail" style="background-image: url('/assets/mac.jpg');">
-                <div class="product-details text-center">
-                  <div class="align-vertical">
-                    <h3>Orange chair</h3>
-                    <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                    <p class="product-price">$90</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-      
-           
-          </div><!-- /.row -->
-        </div><!-- /.container -->
-      </section>
+      <h2 class="page-title text-center">Featured Products</h2>
+      <%= render 'shared/list' %>
 
       <section>
         <div class="background-image-holder on-page overlay">
