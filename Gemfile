@@ -45,6 +45,7 @@ gem 'simple_form'
   gem 'figaro'
   gem 'country_select'
   gem 'font-awesome-rails'
+  gem 'toastr-rails'
 
 group :development do
   gem 'rails-erd'
