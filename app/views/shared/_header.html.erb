@@ -22,8 +22,6 @@
   <div class="side-social">
     <a href="#"><i class="fa fa-facebook"></i></a>
     <a href="#"><i class="fa fa-twitter"></i></a>
-    <a href="#"><i class="fa fa-google-plus"></i></a>
-    <a href="#"><i class="fa fa-pinterest"></i></a>
     <a href="#"><i class="fa fa-instagram"></i></a>
   </div>
 </div>
@@ -53,30 +51,29 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="collapse-navigation">
         <ul class="nav navbar-nav">
-          <li>
-            <%= link_to 'Home', root_path %>
-          </li>
-          <li>
-            <%= link_to 'Store', shop_path %>
-          </li>
-          <li>
-            <%= link_to 'About', about_path %>
-          </li>
-          <li>
-            <%= link_to new_contact_path do  %>
-              <i class="fa fa-paper-plane"></i> Contact
-            <% end %>
-          </li>
-          <li>
-          <li>
-              <% if @cart.total_price > 0 %>
-              <%= link_to @cart, class: 'menu-cart' do  %>
-                <%= number_to_currency @cart.total_price %>
+            <li>
+              <%= link_to 'Home', root_path %>
+            </li>
+            <li>
+              <%= link_to 'Store', shop_path %>
+            </li>
+            <li>
+              <%= link_to 'About', about_path %>
+            </li>
+            <li>
+              <%= link_to new_contact_path do  %>
+                <i class="fa fa-paper-plane"></i> Contact
               <% end %>
-             <% else %>
-              <a href="#" class="menu-cart"><i class="fa fa-shopping-cart"></i> $0.00</a>
-             <% end %>
-             </li>  
+            </li>
+            <li>
+                <% if @cart.total_price > 0 %>
+                <%= link_to @cart, class: 'menu-cart' do  %>
+                  <%= number_to_currency @cart.total_price %>
+                <% end %>
+               <% else %>
+                <a href="#" class="menu-cart"><i class="fa fa-shopping-cart"></i> $0.00</a>
+               <% end %>
+            </li>  
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li>
