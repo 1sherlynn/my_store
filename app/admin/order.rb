@@ -3,7 +3,7 @@ ActiveAdmin.register Order do
 permit_params :shipped
 	
 	after_update do |order|
-		OrderNotifier.shipped(@order).deliver if order.shipped
+		OrderNotifierMailer.shipped(@order).deliver if order.shipped
 	end
 
   show do |order|
