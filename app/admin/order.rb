@@ -1,6 +1,6 @@
 ActiveAdmin.register Order do
 
-permit_params :shipped
+permit_params :shipped, :name, :email, :address, :city, :country
 	
 	after_update do |order|
 		OrderNotifierMailer.shipped(@order).deliver if order.shipped
