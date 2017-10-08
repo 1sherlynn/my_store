@@ -9,8 +9,8 @@
               <h1>Pancakes</h1>
               <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates depudiandae sint et molestiae.</p>
               <div class="button-group">
-                <a href="#" class="btn btn-default">Purchase</a>
-                <a href="#" class="btn btn-primary">Shop Now</a>
+             
+                <%= link_to 'Shop Now', shop_path, class:"btn btn-default" %>
               </div>
             </div>
           </div><!--end of row-->
@@ -24,10 +24,10 @@
               <a href="#"><span data-icon="v" class="icon"></span> <span class="text">Fast Delivery</span></a>
             </div>
             <div class="col-sm-4">
-              <a href="#"><span data-icon="/" class="icon"></span> <span class="text">Adjustable</span></a>
+              <a href="#"><span data-icon="/" class="icon"></span> <span class="text">Flexible</span></a>
             </div>
             <div class="col-sm-4">
-              <a href="#"><span data-icon="7" class="icon"></span> <span class="text">Inovative</span></a>
+              <a href="#"><span data-icon="7" class="icon"></span> <span class="text">Creative</span></a>
             </div>
           </div><!-- /.row -->
         </div><!-- /.container -->
@@ -40,9 +40,9 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-5 text-left">
-              <h2 class="page-title">For your familly</h2>
+              <h2 class="page-title">Enjoy with Friends</h2>
               <p class="description">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates depudiandae sint et molestiae.</p>
-              <a href="#" class="btn btn-primary">Shop Now</a>
+               <%= link_to 'Shop Now', shop_path, class:"btn btn-default" %>
             </div>
           </div><!--end of row-->
         </div><!--end of container-->
@@ -54,14 +54,16 @@
       <%= render 'shared/list' %>
       <section>
         <div class="background-image-holder on-page overlay">
-          <img class="background-image" alt="Background Image" src="/assets/mac.jpg">
+          <img class="background-image" alt="Background Image" src="/assets/hamburger.jpg">
         </div>
         <div class="container">
           <div class="row">
             <div class="col-sm-5 col-sm-offset-7 text-right">
-              <h2 class="page-title">Modern Chair<span class="accent-color">.</span></h2>
+              <h2 class="page-title">Online Cafe Menu<span class="accent-color">.</span></h2>
               <p class="description">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates depudiandae sint et molestiae.</p>
-              <a href="#" class="btn btn-primary">Shop Now</a>
+               <div class="button-group">
+                <%= link_to 'Shop Now', shop_path, class:"btn btn-default" %>
+              </div>
             </div>
           </div><!--end of row-->
         </div><!--end of container-->
