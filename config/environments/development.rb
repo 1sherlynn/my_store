@@ -69,4 +69,9 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+  Braintree::Configuration.environment = :sandbox
+  Braintree::Configuration.merchant_id = ENV['merchant_id']
+  Braintree::Configuration.public_key =  ENV['public_key']
+  Braintree::Configuration.private_key = ENV['private_key']
 end
