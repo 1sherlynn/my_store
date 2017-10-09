@@ -47,6 +47,7 @@ gem 'jbuilder', '~> 2.5'
   gem 'font-awesome-rails'
   gem 'toastr-rails'
   gem 'omniauth-facebook'
+  gem 'dotenv-rails', groups: [:development, :test]
 
 
 group :development do
