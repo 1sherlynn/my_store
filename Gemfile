@@ -46,6 +46,7 @@ gem 'jbuilder', '~> 2.5'
   gem 'country_select'
   gem 'font-awesome-rails'
   gem 'toastr-rails'
+  gem 'omniauth-facebook'
 
 
 group :development do

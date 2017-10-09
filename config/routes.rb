@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
   
-  devise_for :users, controllers: {sessions: 'users/sessions', registrations: 'users/registrations', passwords: 'users/passwords', unlocks: 'users/unlocks', confirmations: 'users/confirmations'} 
+  devise_for :users, controllers: {sessions: 'users/sessions', registrations: 'users/registrations', passwords: 'users/passwords', unlocks: 'users/unlocks', confirmations: 'users/confirmations', omniauth_callbacks: "users/omniauth_callbacks"} 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
+
+
   root 'pages#index'
 
   get 'shop' => 'pages#shop'
