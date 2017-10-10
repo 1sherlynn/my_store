@@ -5,8 +5,6 @@ class OrderNotifierMailer < ApplicationMailer
   #
   #   en.order_notifier_mailer.received.subject
 
-include SendGrid
-
   def received(order)
     @order = order 
 
