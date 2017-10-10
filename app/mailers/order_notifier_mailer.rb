@@ -5,19 +5,18 @@ class OrderNotifierMailer < ApplicationMailer
   #
   #   en.order_notifier_mailer.received.subject
 
-
-  default from: 'My Store <store@mail.com>'
+include SendGrid
 
   def received(order)
     @order = order 
 
-    mail to: order.email, subject: 'Modern Store Order'
+    mail to: @order.email, subject: 'Store Order'
   end
 
 
   def shipped(order)
     @order = order 
 
-    mail to: order.email, subject: 'Order Shipped'
+    mail to: @order.email, subject: 'Order Shipped'
   end
 end

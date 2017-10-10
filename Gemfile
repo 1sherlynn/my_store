@@ -40,7 +40,6 @@ gem 'jbuilder', '~> 2.5'
   gem 'carrierwave', '~> 1.1'
   gem "mini_magick"
   gem 'activeadmin', github: 'activeadmin'
-  gem 'toastr-rails'
   gem 'braintree'
   gem 'figaro'
   gem 'country_select'
@@ -48,6 +47,7 @@ gem 'jbuilder', '~> 2.5'
   gem 'toastr-rails'
   gem 'omniauth-facebook'
   gem 'dotenv-rails', groups: [:development, :test]
+  gem 'sendgrid-ruby'
 
 
 group :development do
