@@ -52,6 +52,7 @@ gem 'jbuilder', '~> 2.5'
 
 group :development do
   gem 'rails-erd'
+  gem 'letter_opener_web'
 end
 
 group :development, :test do
