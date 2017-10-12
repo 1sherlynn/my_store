@@ -9,7 +9,7 @@ Rails.application.initialize!
     ActionMailer::Base.smtp_settings = {
       :user_name => ENV['SENDGRID_USERNAME'],
       :password => ENV['SENDGRID_PASSWORD'],
-      :domain => 'shopping-cart-rails.herokuapp.com',
+      :domain => 'https://shopping-cart-rails.herokuapp.com',
       :address => 'smtp.sendgrid.net',
       :port => 587,
       :authentication => :plain,
