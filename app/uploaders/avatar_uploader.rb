@@ -15,6 +15,11 @@ class AvatarUploader < CarrierWave::Uploader::Base
   # end
 
 
+    def cache_dir
+      "#{Rails.root}/tmp/uploads"
+    end
+
+
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:
   def store_dir
@@ -58,5 +63,7 @@ class AvatarUploader < CarrierWave::Uploader::Base
   # def filename
   #   "something.jpg" if original_filename
   # end
+
+
 
 end
