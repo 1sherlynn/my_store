@@ -48,7 +48,7 @@ gem 'jbuilder', '~> 2.5'
   gem 'omniauth-facebook'
   gem 'dotenv-rails', groups: [:development, :test]
   gem 'sendgrid-ruby'
-  gem 'fog'
+  gem 'fog', require: 'fog/aws'
 
 
 group :development do
