@@ -1,6 +1,7 @@
 class Order < ApplicationRecord
 
 	has_many :product_items, dependent: :destroy
+
 	
 	validates :name, :email, :address, :city, :country, presence: true
 	
@@ -12,7 +13,10 @@ class Order < ApplicationRecord
   end
   
   def total_price
-	  product_items.map(&:total_price).sum
+	  product_items.map(&:total_price).sum 
+	  #same result as in models/cart.rb : 
+	  #product_items.to_a.sum{|item| item.total_price}
 	end
 	
 end
+

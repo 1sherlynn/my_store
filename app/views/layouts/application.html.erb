@@ -8,16 +8,18 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag "https://js.braintreegateway.com/js/braintree-2.32.1.min.js" %>
 
+ 
     
   </head>
 
   <body>
 
+
   <!-- flash start --> 
-    <% flash.each do |name, msg| %>
+<!--     <% flash.each do |name, msg| %>
       <%= content_tag :div, msg, class: "alert alert-info"%>
-     <% end %>
-<!-- flash end --> 
+     <% end %> -->
+<!-- flash end  -->
 
     <%= render 'shared/header' %>
 

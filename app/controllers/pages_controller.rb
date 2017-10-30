@@ -8,7 +8,9 @@ class PagesController < ApplicationController
   end
   
   def shop
-    @products = Product.all
+    query = params[:q].presence || "*" 
+    #method provided by rails in ActiveSupport. Checks to see if query attribute is present, if not return default value of * which will show all Products
+    @products = Product.search(query)
   end
   
   def about

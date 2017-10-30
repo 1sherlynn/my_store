@@ -1,6 +1,4 @@
 class OrdersController < ApplicationController
-
-  before_action :authenticate_user!
   
   include CurrentCart
   before_action :set_cart, only: [:new, :create]

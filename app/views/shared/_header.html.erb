@@ -104,7 +104,14 @@
                 <a href="#" class="menu-cart"><i class="fa fa-shopping-cart"></i> $0.00</a>
                <% end %>
             </li>  
+            <li> <br>
+            <%= form_tag shop_path, method: :get do %> 
+                  <%= text_field_tag :q, nil , placeholder: "Search for Product" %>
+                 <% end %>
+                 </li>
         </ul>
+               
+              
 
 
 <!-- user navbar--> 

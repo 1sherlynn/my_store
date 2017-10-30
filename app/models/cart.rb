@@ -1,6 +1,7 @@
 class Cart < ActiveRecord::Base
 	
 	has_many :product_items, dependent: :destroy
+	belongs_to :user, required: false
 	
 	def add_product(product_id)
 		current_item = product_items.find_by(product_id: product_id)
@@ -13,7 +14,9 @@ class Cart < ActiveRecord::Base
 	end
 	
 	def total_price
-		product_items.to_a.sum{|item| item.total_price}
+		# product_items.to_a.sum{|item| item.total_price}
+		#same result as in models/cart.rb : 
+	 	product_items.map(&:total_price).sum 
 	end
 	
 end

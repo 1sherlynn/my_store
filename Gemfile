@@ -39,6 +39,9 @@ gem 'jbuilder', '~> 2.5'
   gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
   gem 'carrierwave', '~> 1.1'
   gem "mini_magick"
+
+  gem 'searchkick'
+
   gem 'activeadmin', github: 'activeadmin'
   gem 'braintree'
   gem 'figaro'
@@ -49,6 +52,7 @@ gem 'jbuilder', '~> 2.5'
   gem 'dotenv-rails', groups: [:development, :test]
   gem 'sendgrid-ruby'
   gem "fog-aws"
+
 
 
 group :development do
