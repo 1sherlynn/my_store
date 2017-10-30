@@ -69,7 +69,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         </button>
-        <%= link_to shop_path, class: 'navbar-brand' do %>
+        <%= link_to products_path, class: 'navbar-brand' do %>
           Store<span class="logo-dot accent-bg"></span>
         <% end %>
         <a href="#sidr" class="side-menu-opener mobile">
@@ -105,7 +105,7 @@
                <% end %>
             </li>  
             <li> <br>
-            <%= form_tag shop_path, method: :get do %> 
+            <%= form_tag products_path, method: :get do %> 
                   <%= text_field_tag :q, nil , placeholder: "Search for Product" %>
                  <% end %>
                  </li>

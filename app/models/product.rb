@@ -2,7 +2,7 @@ class Product < ApplicationRecord
 
 	before_destroy :ensure_not_product_item #to double check if its it is currently being added to any cart 
 
-	searchkick
+	searchkick text_start: [:title], suggest: [:title]
 	mount_uploader :avatar, AvatarUploader
 	validates :title, :description, presence: true 
 	validates :price, numericality: {greater_than_or_equal_to: 0.01}

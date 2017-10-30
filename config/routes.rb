@@ -7,10 +7,23 @@ Rails.application.routes.draw do
 
   root 'pages#index'
 
-  get 'shop' => 'pages#shop'
+  get 'shop' => 'pages#shop' do
+    collection do 
+      get :autocomplete
+    end
+  end
+
+  resources :products do
+    collection do 
+        get :autocomplete
+    end
+  end
+
+
   get 'about' => 'pages#about'
   
   
+
   resources :carts
   resources :product_items
   resources :orders

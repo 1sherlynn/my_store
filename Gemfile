@@ -53,6 +53,8 @@ gem 'jbuilder', '~> 2.5'
   gem 'sendgrid-ruby'
   gem "fog-aws"
 
+  gem 'jquery-ui-rails'
+
 
 
 group :development do
